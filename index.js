@@ -29,7 +29,7 @@ app.get('/api/four', (req, res) => {
     let responseData = {};
 
     if (multiplier) {
-        number = parseInt(multiplier);
+        const number = parseInt(multiplier);
         responseData = {
             result: number * 4
         };
